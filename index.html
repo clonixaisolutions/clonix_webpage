@@ -2,8 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Clonix – Let Your AI Twin Do It</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Primary SEO Meta Tags -->
+  <title>Clonix - AI Avatar & Voice Cloning for Automated Content Creation</title>
+  <meta name="title" content="Clonix - AI Avatar & Voice Cloning for Automated Content Creation">
+  <meta name="description" content="Create content at scale using Clonix's AI-powered avatars and voice cloning. Automate video creation and scale your personal brand 24/7. No filming required.">
+
+  <!-- SEO Keywords -->
+  <meta name="keywords" content="AI clone, AI avatar, content automation, voice cloning, video automation, AI influencer, AI content creator, automate social media content, short-form content AI, video AI tool">
+
+  <!-- Robots and Viewport -->
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.clonix.ai/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.clonix.ai/">
+  <meta property="og:title" content="Clonix - AI Avatar & Voice Cloning for Automated Content Creation">
+  <meta property="og:description" content="Automate content creation using AI avatars. Create real-looking short-form videos with no filming. Start your free trial today.">
+  <meta property="og:image" content="https://www.clonix.ai/assets/og-banner.png">
+
+  <!-- Twitter Cards -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.clonix.ai/">
+  <meta property="twitter:title" content="Clonix - AI Avatar & Voice Cloning for Automated Content Creation">
+  <meta property="twitter:description" content="Automate content creation using AI avatars. Create real-looking short-form videos with no filming. Start your free trial today.">
+  <meta property="twitter:image" content="https://www.clonix.ai/assets/og-banner.png">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Clonix",
+    "url": "https://www.clonix.ai/",
+    "applicationCategory": "Multimedia",
+    "operatingSystem": "All",
+    "description": "AI-powered avatar and voice cloning to automate video content creation for creators and businesses.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "Clonix"
+    }
+  }
+  </script>
+
+  <meta http-equiv="Content-Security-Policy" content="frame-src https://calendly.com https://assets.calendly.com https://www.youtube.com https://www.youtube-nocookie.com;">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -46,15 +96,17 @@
       display:flex;flex-direction:column;align-items:center;text-align:center;
       padding:clamp(3rem, 8vw, 5rem) 5vw clamp(2rem, 5vw, 3rem);
     }
-    .hero h1{font-size:clamp(1.8rem, 5vw, 3.2rem);font-weight:700;margin-bottom:1rem}
+    .hero h1{font-size:clamp(1.6rem, 4.5vw, 2.8rem);font-weight:700;margin-bottom:1rem}
     .hero p{color:var(--muted);max-width:90%;margin-bottom:2.2rem;font-size:clamp(0.9rem, 2.5vw, 1.05rem)}
     .hero-iframe{
       width:100%;max-width:720px;border-radius:var(--radius);aspect-ratio:16/9;border:0;
       box-shadow:0 10px 30px rgba(0,0,0,.5);
     }
+    .hero-cta { margin-top: 2rem; text-align: center; width: 100%; max-width: 720px; }
     @media (max-width: 600px) {
       .hero p {max-width: 100%;}
       .hero-iframe {max-width: 100%;}
+      .hero-cta { max-width: 100%; }
     }
 
     /* WHY CLONIX? */
@@ -93,8 +145,10 @@
     }
     .get-title{font-size:clamp(1rem, 2.5vw, 1.1rem);font-weight:600;margin-bottom:.5rem;color:#fff}
     .get-desc{color:var(--muted);font-size:clamp(0.85rem, 2.5vw, 0.9rem);line-height:1.5}
+    .get-cta { margin: 2rem auto 0; width: auto; max-width: 100%; }
     @media (max-width:600px) {
       .get-card {flex: 1 1 100%; max-width: 100%;}
+      .get-cta { max-width: 100%; }
     }
 
     /* BEFORE & AFTER */
@@ -176,8 +230,10 @@
     .video-mockup iframe{
       width:100%;aspect-ratio:16/9;border:0;
     }
+    .how-cta { margin: 2rem auto 0; width: auto; max-width: 100%; }
     @media (max-width:600px) {
       .video-mockup {max-width: 100%;}
+      .how-cta { max-width: 100%; }
     }
 
     /* ABOUT US */
@@ -223,14 +279,14 @@
     }
 
     /* DISCOVERY CALL */
-    #discovery-call{
+    #schedule-call{
       background:#0F172A;
       padding:clamp(3rem, 8vw, 5rem) 5vw;
     }
-    #discovery-call h2{
+    #schedule-call h2{
       text-align:center;font-size:clamp(1.5rem, 4vw, 2rem);font-weight:700;color:#fff;margin-bottom:.25rem;
     }
-    #discovery-call p{
+    #schedule-call p{
       text-align:center;color:var(--muted);margin-bottom:2rem;
     }
     .dc-wrapper{
@@ -244,6 +300,9 @@
       font-size:clamp(0.85rem, 2.5vw, 0.95rem);color:var(--muted);line-height:1.7;margin-bottom:1rem;
     }
     .dc-calendar{flex:1 1 400px;background:var(--card);border-radius:var(--radius);padding:1.5rem;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+    .calendly-inline-widget:empty + .calendly-fallback {
+      display: block !important;
+    }
     @media(max-width:767px){.dc-wrapper{flex-direction:column}}
 
     /* FOOTER */
@@ -327,18 +386,21 @@
 <nav>
   <a class="logo" href="#">Clonix</a>
   <div class="nav-links">
-    <a href="#why-clonix">Features</a>
-    <a href="#get-started">How It Works</a>
+    <a href="#why-clonix">Why Us?</a>
+    <a href="#how-we-do-this">How It Works</a>
     <a href="#testimonials">Testimonials</a>
-    <a class="btn" href="#discovery-call">Get Started</a>
+    <a class="btn" href="#schedule-call">Get Started</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Let your AI twin do it.</h1>
+  <h1>You’re Busy. We Make Sure the World Still Sees You</h1>
   <p>We clone your voice & face to produce consistent, high-quality videos — even when you're offline.</p>
-  <iframe class="hero-iframe" width="560" height="315" src="https://www.youtube.com/embed/Fqvc5JPhQ7s?si=UuJzRk2s1VsAJAva" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="hero-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Fqvc5JPhQ7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="hero-cta">
+    <a href="#schedule-call" class="btn">Schedule a Free Consultation Call</a>
+  </div>
 </section>
 
 <!-- WHY CLONIX? -->
@@ -375,6 +437,9 @@
     <div class="get-card"><div class="get-icon">➕</div><div class="get-title">Onboarding & Initial Recording</div><div class="get-desc">After onboarding, we’ll guide you through a one-time recording session to capture raw video and audio of you speaking. This is the only time you’ll need to be on camera.</div></div>
     <div class="get-card"><div class="get-icon">✅</div><div class="get-title">AI Avatar & Content Generation</div><div class="get-desc">We use your recordings to create a hyper-realistic avatar that looks & sounds exactly like you. From there, we handle everything—from ideation to publishing.</div></div>
   </div>
+  <div class="get-cta">
+    <a href="#schedule-call" class="btn">Schedule a Free Consultation Call</a>
+  </div>
 </section>
 
 <!-- BEFORE & AFTER -->
@@ -408,19 +473,22 @@
   <h2>A CEO without a personal brand is a ghost leading a company.</h2>
   <p>See how thousands of creators are scaling content with AI</p>
   <div class="shorts-row">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xXnX31ODPpg?si=QHeQD65ExP6kEPDK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8i-POJfMe8?si=rQfZDgn2sWpqu76L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/mjRl1o-zpA0?si=4M56gdT1BQGIZfot" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/8-vKSaT2oh4?si=pJLsGGlQkoxbnASG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xXnX31ODPpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Q8i-POJfMe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mjRl1o-zpA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8-vKSaT2oh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </section>
 
 <!-- HERE'S EXACTLY HOW WE DO THIS -->
 <section id="how-we-do">
-  <h2>Here's Exactly How We Do This</h2>
+  <h2 id="how-we-do-this">Here's Exactly How We Do This</h2>
   <p>We deliver everything you need to build your personal brand without overwhelming your schedule.</p>
   <div class="video-mockup">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWGlKhJq98k?si=Y1X6trRwA8npIRiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZWGlKhJq98k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="how-cta">
+    <a href="#schedule-call" class="btn">Schedule a Free Consultation Call</a>
   </div>
 </section>
 
@@ -440,7 +508,7 @@
 </section>
 
 <!-- DISCOVERY CALL -->
-<section id="discovery-call">
+<section id="schedule-call">
   <h2>Discovery Call with Clonix</h2>
   <p>30 min &nbsp;&nbsp;|&nbsp;&nbsp; Web conferencing details provided upon confirmation.</p>
   <div class="dc-wrapper">
@@ -456,8 +524,8 @@
     <div class="dc-calendar">
       <!-- Calendly inline widget begin -->
       <div class="calendly-inline-widget" data-url="https://calendly.com/clonix-info/30min?background_color=1a1a1a&text_color=ffffff&primary_color=4182dc" style="min-width:320px;height:700px;"></div>
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
       <!-- Calendly inline widget end -->
+      <p style="color: var(--muted); font-size: clamp(0.75rem, 2vw, 0.8rem); text-align: center; display: none;" class="calendly-fallback">Please disable your ad blocker to view the calendar or <a href="https://calendly.com/clonix-info/30min" style="color: var(--blue);">book directly here</a>.</p>
     </div>
   </div>
 </section>
@@ -492,5 +560,18 @@
   </div>
 </footer>
 
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
