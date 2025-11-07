@@ -147,7 +147,7 @@
         /* Horizontal Auto-Scroll Styles */
         .horizontal-scroll-container {
             display: flex;
-            overflow-x: hidden; /* Hide overflow and scrollbar */
+            overflow-x: hidden; /* Hide overflow and scrollbar by default */
             -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
             mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
         }
@@ -161,7 +161,10 @@
             will-change: transform;
         }
 
-        /* This stops the animation on hover */
+        /* This stops the animation on hover AND allows manual scrolling */
+        .horizontal-scroll-container:hover {
+            overflow-x: auto; /* Allow horizontal scrolling on hover */
+        }
         .horizontal-scroll-container:hover .scroll-track {
             animation-play-state: paused;
         }
@@ -325,7 +328,7 @@
             
             <h2 class="font-heading text-3xl md:text-5xl font-bold text-white animate-child">See Our AI Clones In Action</h2>
             <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mt-6 animate-child" style="animation-delay: 0.15s;">
-                "None of my 150K followers recognized it was my AI clone."
+                "None of my followers recognized it was my AI clone."
             </p>
 
             <!-- "Our Work" Horizontal Auto-Scroll -->
@@ -441,7 +444,7 @@
         <section class="py-16 md:py-24 px-6 max-w-5xl mx-auto text-center scroll-animate">
             <h2 class="font-heading text-3xl md:text-5xl font-bold text-white animate-child">Introducing the World’s First <span class="gradient-text">Founder AI Engine</span></h2>
             <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mt-6 animate-child" style="animation-delay: 0.15s;">
-                This isn’t another basic AI avatar tool. It’s the result of 3 years and ₹2+ crores in R&D.
+                This isn’t another basic AI avatar tool it’s the result of years of advanced research and development.
             </p>
 
             <div class="grid md:grid-cols-3 gap-6 mt-16 text-left">
@@ -679,7 +682,7 @@
                 <!-- Urgency 4 -->
                  <li class="flex items-start space-x-4 p-4 rounded-lg bg-brand-dark border border-brand-purple-t animate-child transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-glow-purple hover:border-brand-purple/70" style="animation-delay: 0.5s;">
                     <svg class="w-6 h-6 text-brand-purple flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
-                    <span>Every day you wait, you're leaving <span class="font-bold text-white">₹1L-₹5L on the table.</span></span>
+                    <span>Every day you wait, you’re leaving $1,000–$5,000 on the table.</span>
                 </li>
             </ul>
             <div class="mt-12 animate-child" style="animation-delay: 0.6s;">
